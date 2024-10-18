@@ -173,7 +173,7 @@ function checkCollision(rect1, rect2) {
 
 // Função de Game Over
 function gameOver() {
-    alert(`Game Over! Sua pontuação foi: ${score}`);
+ 
     document.location.reload();
 }
 
@@ -193,6 +193,7 @@ function gameLoop() {
     update();
     requestAnimationFrame(gameLoop);
 }
+
 
 // Cria inimigos e tanques de combustível de forma intermitente
 setInterval(createEnemy, 1000);
